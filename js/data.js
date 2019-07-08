@@ -6,6 +6,16 @@ const footerIcons = [
         link: '#'
     },
     {
+        icon: 'globe'
+    },
+    {
+        icon: 'car',
+        link: ''
+    },
+    {
+
+    },
+    {
         icon: 'twitter',
         link: '#'
     },
@@ -16,5 +26,8 @@ const footerIcons = [
     {
         icon: 'behance',
         link: '#'
+    },
+    {
+        some: ':)'
     }
 ];
