@@ -1,5 +1,6 @@
 "use strict";
 
+// achievments
 const achievments = [
     {
         icon: 'archive',
@@ -23,6 +24,35 @@ const achievments = [
     }
 ];
 
+// clients
+const clients = [
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    }
+];
+
+// footerIcons
 const footerIcons = [
     {
         icon: 'facebook',

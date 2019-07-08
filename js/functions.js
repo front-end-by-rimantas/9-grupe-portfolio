@@ -1,5 +1,6 @@
 "use strict";
 
+// generate Achievments
 function generateAchievments( data ) {
     let HTML = '';
 
@@ -9,6 +10,19 @@ function generateAchievments( data ) {
                     <p>${data[i].value}</p>
                     <h4>${data[i].title}</h4>
                 </div>`;
+    }
+
+    return HTML;
+}
+
+// generate ClientLogos
+function generateClientLogos( data ) {
+    let HTML = '';
+
+    for ( let i=0; i<data.length; i++ ) {
+        HTML += `<a href="${data[i].link}">
+                    <img src="${data[i].photo}" alt="Client logo">
+                </a>`;
     }
 
     return HTML;
