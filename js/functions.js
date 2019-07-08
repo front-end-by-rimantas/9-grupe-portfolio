@@ -1,5 +1,21 @@
 "use strict";
 
+// generate Achievments
+function generateAchievments( data ) {
+    let HTML = '';
+
+    for ( let i=0; i<data.length; i++ ) {
+        HTML += `<div class="achievement">
+                    <i class="fa fa-${data[i].icon}"></i>
+                    <p>${data[i].value}</p>
+                    <h4>${data[i].title}</h4>
+                </div>`;
+    }
+
+    return HTML;
+}
+
+// generate ClientLogos
 function generateClientLogos( data ) {
     let HTML = '';
 
