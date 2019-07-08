@@ -1,5 +1,32 @@
 "use strict";
 
+const clients = [
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    },
+    {
+        photo: 'client-logo.png',
+        link: '#'
+    }
+];
+
 const footerIcons = [
     {
         icon: 'facebook',
