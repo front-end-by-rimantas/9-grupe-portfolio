@@ -1,1 +1,38 @@
 /* all other styles, style updates, etc */
+
+#main_footer {
+    text-align: center;
+}
+    #main_footer > .row > * {
+        display: inline-block;
+        width: 100%;
+    }
+    #main_footer > .row > img {
+        width: auto;
+    }
+    #main_footer > .row > h4 {
+        margin: 20px 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #main_footer > .row > .social-icons {
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+        .social-icons > a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+            .social-icons > a > .fa {
+                font-size: 40px;
+                line-height: 40px;
+            }
+                .social-icons > a > .fa:hover {
+                    color: #000;
+                }
+    #main_footer > .row > .legal {
+
+    }
