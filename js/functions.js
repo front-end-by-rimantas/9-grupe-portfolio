@@ -1,5 +1,17 @@
 "use strict";
 
+function generateClientLogos( data ) {
+    let HTML = '';
+
+    for ( let i=0; i<data.length; i++ ) {
+        HTML += `<a href="${data[i].link}">
+                    <img src="${data[i].photo}" alt="Client logo">
+                </a>`;
+    }
+
+    return HTML;
+}
+
 function generateFooterIcons( data ) {
     let HTML = '';
 
