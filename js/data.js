@@ -52,6 +52,16 @@ const clients = [
     }
 ];
 
+// skills
+
+// latest works
+
+// job history
+
+// service offers
+
+// testimonials
+
 // footerIcons
 const footerIcons = [
     {

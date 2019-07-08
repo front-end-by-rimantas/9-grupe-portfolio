@@ -28,6 +28,18 @@ function generateClientLogos( data ) {
     return HTML;
 }
 
+// skills
+
+// latest works
+
+// job history
+
+// service offers
+
+// testimonials
+
+// footer
+
 function generateFooterIcons( data ) {
     let HTML = '';
 
