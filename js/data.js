@@ -1,7 +1,7 @@
 "use strict";
 
-// achievments
-const achievments = [
+// achievements
+const achievements = [
     {
         icon: 'archive',
         value: 245,
