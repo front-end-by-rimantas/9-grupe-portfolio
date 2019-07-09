@@ -2,14 +2,33 @@
 
 // generate Achievments
 function generateAchievments( data ) {
-    let HTML = '';
+    let HTML = '',
+        countValid = 0;
 
     for ( let i=0; i<data.length; i++ ) {
-        HTML += `<div class="achievement">
-                    <i class="fa fa-${data[i].icon}"></i>
-                    <p>${data[i].value}</p>
-                    <h4>${data[i].title}</h4>
-                </div>`;
+        if ( countValid >= 4 ) {
+            break;
+        }
+        if ( !data[i].icon ||
+             !data[i].title ) {
+            continue;
+        }
+
+        if ( data[i].value ) {
+            HTML += `<div class="block">
+                        <i class="fa fa-${data[i].icon}"></i>
+                        <p>${data[i].value}</p>
+                        <h4>${data[i].title}</h4>
+                    </div>`;
+        }
+        if ( data[i].description ) {
+            HTML += `<div class="block">
+                        <i class="fa fa-${data[i].icon}"></i>
+                        <h4>${data[i].title}</h4>
+                        <p>${data[i].description}</p>
+                    </div>`;
+        }
+        countValid++;
     }
 
     return HTML;

@@ -1,7 +1,7 @@
 "use strict";
 
-// achievments
-const achievments = [
+// achievements
+const achievements = [
     {
         icon: 'archive',
         value: 245,
@@ -59,6 +59,33 @@ const clients = [
 // job history
 
 // service offers
+const services = [
+    {
+        icon: 'diamond',
+        title: 'Web design',
+        description: 'If you’re looking blank casvsettes on the web, you may confuse.'
+    },
+    {
+        icon: 'bar-chart',
+        title: 'App Development',
+        description: 'If you’re looking blank casvsettes on the web, you may confuse.'
+    },
+    {
+        icon: 'lightbulb-o',
+        title: 'Web Development',
+        description: 'If you’re looking blank casvsettes on the web, you may confuse.'
+    },
+    {
+        icon: 'dashboard',
+        title: 'Web Development',
+        description: 'If you’re looking blank casvsettes on the web, you may confuse.'
+    },
+    {
+        icon: 'car',
+        title: 'Car washing',
+        description: 'If you’re looking blank casvsettes on the web, you may confuse.'
+    }
+];
 
 // testimonials
 

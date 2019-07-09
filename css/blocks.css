@@ -1,1 +1,56 @@
-/* achievements and services*/
+/* blocks and services*/
+
+.blocks-list {
+    display: inline-block;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-bottom: -30px;
+}
+.block {
+    display: inline-block;
+    width: calc( (100% - 4*30px) / 4 );
+    float: left;
+    padding: 60px 20px;
+    margin: 0 15px 30px 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 16px #AAA;
+    background: #FFF;
+}
+    .block > * {
+        display: inline-block;
+        width: 100%;
+    }
+    .block > .fa {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+        border: 2px solid var(--main-color);
+        border-radius: 50%;
+        background-color: var(--forth-color);
+        color: var(--forth-color-anti);
+        line-height: 78px;
+        font-size: 30px;
+    }
+    .block > p {
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+    .block > h4 {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .block > .fa + h4 {
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+    .block > h4 + p {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: normal;
+    }
+    .block > *:last-child {
+        margin-bottom: 0;
+    }
