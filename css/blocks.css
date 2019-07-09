@@ -1,12 +1,12 @@
-/* achievements and services*/
+/* blocks and services*/
 
-.achievements-list {
+.blocks-list {
     display: inline-block;
     width: calc(100% + 30px);
     margin-left: -15px;
     margin-bottom: -30px;
 }
-.achievement {
+.block {
     display: inline-block;
     width: calc( (100% - 4*30px) / 4 );
     float: left;
@@ -17,13 +17,14 @@
     box-shadow: 0 3px 16px #AAA;
     background: #FFF;
 }
-    .achievement > * {
+    .block > * {
         display: inline-block;
         width: 100%;
     }
-    .achievement > .fa {
+    .block > .fa {
         width: 80px;
         height: 80px;
+        margin-bottom: 20px;
         border: 2px solid var(--main-color);
         border-radius: 50%;
         background-color: var(--forth-color);
@@ -31,11 +32,25 @@
         line-height: 78px;
         font-size: 30px;
     }
-    .achievement > p {
+    .block > p {
+        margin-bottom: 10px;
         font-size: 36px;
-        line-height: 60px;
+        line-height: 40px;
         font-weight: bold;
     }
-    .achievement > h4 {
+    .block > h4 {
+        margin-bottom: 10px;
         text-transform: uppercase;
+    }
+    .block > .fa + h4 {
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+    .block > h4 + p {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: normal;
+    }
+    .block > *:last-child {
+        margin-bottom: 0;
     }
