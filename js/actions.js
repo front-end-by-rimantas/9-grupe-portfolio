@@ -1,7 +1,7 @@
 "use strict";
 
 // achievments section
-document.querySelector('#achievements .achievements-list').innerHTML = generateAchievments( achievements );
+document.querySelector('#achievements .blocks-list').innerHTML = generateAchievments( achievements );
 
 // clients section
 document.querySelector('#clients > .row').innerHTML = generateClientLogos( clients );
@@ -13,6 +13,7 @@ document.querySelector('#clients > .row').innerHTML = generateClientLogos( clien
 // job history
 
 // service offers
+document.querySelector('#service_offers .blocks-list').innerHTML = generateAchievments( services );
 
 // testimonials
 
