@@ -1,1 +1,41 @@
 /* achievements and services*/
+
+.achievements-list {
+    display: inline-block;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-bottom: -30px;
+}
+.achievement {
+    display: inline-block;
+    width: calc( (100% - 4*30px) / 4 );
+    float: left;
+    padding: 60px 20px;
+    margin: 0 15px 30px 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 16px #AAA;
+    background: #FFF;
+}
+    .achievement > * {
+        display: inline-block;
+        width: 100%;
+    }
+    .achievement > .fa {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--main-color);
+        border-radius: 50%;
+        background-color: var(--forth-color);
+        color: var(--forth-color-anti);
+        line-height: 78px;
+        font-size: 30px;
+    }
+    .achievement > p {
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+    .achievement > h4 {
+        text-transform: uppercase;
+    }

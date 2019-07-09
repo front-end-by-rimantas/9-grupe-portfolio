@@ -1,7 +1,7 @@
 "use strict";
 
 // achievments section
-document.querySelector('#achievements > .row').innerHTML = generateAchievments( achievments );
+document.querySelector('#achievements .achievements-list').innerHTML = generateAchievments( achievements );
 
 // clients section
 document.querySelector('#clients > .row').innerHTML = generateClientLogos( clients );
