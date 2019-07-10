@@ -49,6 +49,26 @@ function generateClientLogos( data ) {
 
 // skills
 
+function generateSkills( data ) {
+    let HTML = '';
+
+    data.forEach( bar => {
+        HTML += `<div class="progress-bar">
+                    <div class="texts">
+                        <div class="title">${bar.title}</div>
+                        <div class="value">${bar.value}%</div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-value" style="width: ${bar.value}%;">
+                            <div class="loading"></div>
+                        </div>
+                    </div>
+                </div>`;
+    });
+
+    return HTML;
+}
+
 // latest works
 
 // job history
