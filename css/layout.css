@@ -21,6 +21,11 @@ body * {
         width: 1200px;
         margin: 0 calc((100% - 1200px) / 2);
     }
+        .container > .row > .column {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        }
 
     @media ( max-width: 1300px ) {
         .container > .row {

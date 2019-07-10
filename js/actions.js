@@ -7,6 +7,7 @@ document.querySelector('#achievements .blocks-list').innerHTML = generateAchievm
 document.querySelector('#clients > .row').innerHTML = generateClientLogos( clients );
 
 // skills
+document.querySelector('#skills_list').innerHTML = generateSkills( skills );
 
 // latest works
 
