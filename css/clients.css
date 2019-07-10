@@ -1,1 +1,30 @@
 /* clients */
+
+#clients {
+    height: 0;
+    padding: 20px 0;
+}
+    #clients .row {
+        height: 114px;
+        padding: 40px;
+        margin-top: -70px;
+        box-shadow: 0 4px 10px #AAA;
+        border-radius: 200px;
+        background-color: #FFF;
+        overflow: hidden;
+    }
+        #clients .row > .client {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            width: 20%;
+            height: 34px;
+            margin-bottom: 40px;
+        }
+            #clients .client > img {
+                display: inline-block;
+            }
+                #clients .client > img[src="img/clients/b2.png"] {
+                    height: 34px;
+                }
