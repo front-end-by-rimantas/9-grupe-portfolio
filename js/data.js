@@ -27,27 +27,43 @@ const achievements = [
 // clients
 const clients = [
     {
-        photo: 'client-logo.png',
+        photo: 'b1.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b2.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b3.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b4.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b5.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b1.png',
+        link: '#'
+    },
+    {
+        photo: 'b2.png',
+        link: '#'
+    },
+    {
+        photo: 'b3.png',
+        link: '#'
+    },
+    {
+        photo: 'b4.png',
+        link: '#'
+    },
+    {
+        photo: 'b5.png',
         link: '#'
     }
 ];

@@ -39,8 +39,8 @@ function generateClientLogos( data ) {
     let HTML = '';
 
     for ( let i=0; i<data.length; i++ ) {
-        HTML += `<a href="${data[i].link}">
-                    <img src="${data[i].photo}" alt="Client logo">
+        HTML += `<a class="client" href="${data[i].link}">
+                    <img src="img/clients/${data[i].photo}" alt="Client logo">
                 </a>`;
     }
 
