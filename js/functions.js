@@ -15,14 +15,14 @@ function generateAchievments( data ) {
         }
 
         if ( data[i].value ) {
-            HTML += `<div class="block">
+            HTML += `<div class="block col-3 col-md-6 col-xs-12">
                         <i class="fa fa-${data[i].icon}"></i>
                         <p>${data[i].value}</p>
                         <h4>${data[i].title}</h4>
                     </div>`;
         }
         if ( data[i].description ) {
-            HTML += `<div class="block">
+            HTML += `<div class="block col-3 col-md-6 col-xs-12">
                         <i class="fa fa-${data[i].icon}"></i>
                         <h4>${data[i].title}</h4>
                         <p>${data[i].description}</p>

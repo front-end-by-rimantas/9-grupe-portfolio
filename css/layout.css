@@ -40,7 +40,7 @@ body * {
 .container {
     display: inline-block;
     width: 100%;
-    padding: 80px 0;
+    padding: 80px 10px;
 }
     .container > .row {
         display: inline-block;
@@ -50,7 +50,8 @@ body * {
         .container > .row > * {
             display: inline-block;
             float: left;
-            margin: 0 var(--gap);
+            margin-left: var(--gap);
+            margin-right: var(--gap);
         }
 
         .container > .row > .col-12 {
