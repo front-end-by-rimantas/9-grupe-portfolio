@@ -17,6 +17,10 @@
     color: var(--third-color-anti);
 }
 
+p + p {
+    margin-top: 20px;
+}
+
 /* headings */
 
 .section-title {
