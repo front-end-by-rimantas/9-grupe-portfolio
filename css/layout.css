@@ -14,6 +14,19 @@
     --c-3: calc((100% / 12) * 3 - 2*var(--gap));
     --c-2: calc((100% / 12) * 2 - 2*var(--gap));
     --c-1: calc((100% / 12) * 1 - 2*var(--gap));
+
+    --cml-12: calc((100% / 12) * 12 + var(--gap));
+    --cml-11: calc((100% / 12) * 11 + var(--gap));
+    --cml-10: calc((100% / 12) * 10 + var(--gap));
+    --cml-9: calc((100% / 12) * 9 + var(--gap));
+    --cml-8: calc((100% / 12) * 8 + var(--gap));
+    --cml-7: calc((100% / 12) * 7 + var(--gap));
+    --cml-6: calc((100% / 12) * 6 + var(--gap));
+    --cml-5: calc((100% / 12) * 5 + var(--gap));
+    --cml-4: calc((100% / 12) * 4 + var(--gap));
+    --cml-3: calc((100% / 12) * 3 + var(--gap));
+    --cml-2: calc((100% / 12) * 2 + var(--gap));
+    --cml-1: calc((100% / 12) * 1 + var(--gap));
 }
 @media ( max-width: 1300px ) {
     :root {
@@ -130,6 +143,46 @@ body * {
         .container > .row > .margin-r-0 {
             margin-right: 0;
         }
+        
+        .container > .row > .margin-l-12 {
+            margin-left: var(--cml-12);
+        }
+        .container > .row > .margin-l-11 {
+            margin-left: var(--cml-11);
+        }
+        .container > .row > .margin-l-10 {
+            margin-left: var(--cml-10);
+        }
+        .container > .row > .margin-l-9 {
+            margin-left: var(--cml-9);
+        }
+        .container > .row > .margin-l-8 {
+            margin-left: var(--cml-8);
+        }
+        .container > .row > .margin-l-7 {
+            margin-left: var(--cml-7);
+        }
+        .container > .row > .margin-l-6 {
+            margin-left: var(--cml-6);
+        }
+        .container > .row > .margin-l-5 {
+            margin-left: var(--cml-5);
+        }
+        .container > .row > .margin-l-4 {
+            margin-left: var(--cml-4);
+        }
+        .container > .row > .margin-l-3 {
+            margin-left: var(--cml-3);
+        }
+        .container > .row > .margin-l-2 {
+            margin-left: var(--cml-2);
+        }
+        .container > .row > .margin-l-1 {
+            margin-left: var(--cml-1);
+        }
+        .container > .row > .margin-l-0 {
+            margin-left: var(--gap);
+        }
 
         .show {
             display: inline-block;
@@ -226,6 +279,46 @@ body * {
         .container > .row > .margin-r-md-0 {
             margin-right: 0;
         }
+        
+        .container > .row > .margin-l-md-12 {
+            margin-left: var(--cml-12);
+        }
+        .container > .row > .margin-l-md-11 {
+            margin-left: var(--cml-11);
+        }
+        .container > .row > .margin-l-md-10 {
+            margin-left: var(--cml-10);
+        }
+        .container > .row > .margin-l-md-9 {
+            margin-left: var(--cml-9);
+        }
+        .container > .row > .margin-l-md-8 {
+            margin-left: var(--cml-8);
+        }
+        .container > .row > .margin-l-md-7 {
+            margin-left: var(--cml-7);
+        }
+        .container > .row > .margin-l-md-6 {
+            margin-left: var(--cml-6);
+        }
+        .container > .row > .margin-l-md-5 {
+            margin-left: var(--cml-5);
+        }
+        .container > .row > .margin-l-md-4 {
+            margin-left: var(--cml-4);
+        }
+        .container > .row > .margin-l-md-3 {
+            margin-left: var(--cml-3);
+        }
+        .container > .row > .margin-l-md-2 {
+            margin-left: var(--cml-2);
+        }
+        .container > .row > .margin-l-md-1 {
+            margin-left: var(--cml-1);
+        }
+        .container > .row > .margin-l-md-0 {
+            margin-left: var(--gap);
+        }
 
         .show-md {
             display: inline-block;
@@ -317,6 +410,46 @@ body * {
             margin-right: 0;
         }
         
+        .container > .row > .margin-l-sm-12 {
+            margin-left: var(--cml-12);
+        }
+        .container > .row > .margin-l-sm-11 {
+            margin-left: var(--cml-11);
+        }
+        .container > .row > .margin-l-sm-10 {
+            margin-left: var(--cml-10);
+        }
+        .container > .row > .margin-l-sm-9 {
+            margin-left: var(--cml-9);
+        }
+        .container > .row > .margin-l-sm-8 {
+            margin-left: var(--cml-8);
+        }
+        .container > .row > .margin-l-sm-7 {
+            margin-left: var(--cml-7);
+        }
+        .container > .row > .margin-l-sm-6 {
+            margin-left: var(--cml-6);
+        }
+        .container > .row > .margin-l-sm-5 {
+            margin-left: var(--cml-5);
+        }
+        .container > .row > .margin-l-sm-4 {
+            margin-left: var(--cml-4);
+        }
+        .container > .row > .margin-l-sm-3 {
+            margin-left: var(--cml-3);
+        }
+        .container > .row > .margin-l-sm-2 {
+            margin-left: var(--cml-2);
+        }
+        .container > .row > .margin-l-sm-1 {
+            margin-left: var(--cml-1);
+        }
+        .container > .row > .margin-l-sm-0 {
+            margin-left: var(--gap);
+        }
+        
         .show-sm {
             display: inline-block;
         }
@@ -405,6 +538,46 @@ body * {
         }
         .container > .row > .margin-r-xs-0 {
             margin-right: 0;
+        }
+        
+        .container > .row > .margin-l-xs-12 {
+            margin-left: var(--cml-12);
+        }
+        .container > .row > .margin-l-xs-11 {
+            margin-left: var(--cml-11);
+        }
+        .container > .row > .margin-l-xs-10 {
+            margin-left: var(--cml-10);
+        }
+        .container > .row > .margin-l-xs-9 {
+            margin-left: var(--cml-9);
+        }
+        .container > .row > .margin-l-xs-8 {
+            margin-left: var(--cml-8);
+        }
+        .container > .row > .margin-l-xs-7 {
+            margin-left: var(--cml-7);
+        }
+        .container > .row > .margin-l-xs-6 {
+            margin-left: var(--cml-6);
+        }
+        .container > .row > .margin-l-xs-5 {
+            margin-left: var(--cml-5);
+        }
+        .container > .row > .margin-l-xs-4 {
+            margin-left: var(--cml-4);
+        }
+        .container > .row > .margin-l-xs-3 {
+            margin-left: var(--cml-3);
+        }
+        .container > .row > .margin-l-xs-2 {
+            margin-left: var(--cml-2);
+        }
+        .container > .row > .margin-l-xs-1 {
+            margin-left: var(--cml-1);
+        }
+        .container > .row > .margin-l-xs-0 {
+            margin-left: var(--gap);
         }
         
         .show-xs {

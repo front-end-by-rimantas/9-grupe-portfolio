@@ -93,6 +93,13 @@ p + p {
 
 /* contact me */
 
+#contact_me {
+    text-align: center;
+}
+    #contact_me .row:nth-child(3) > div {
+        margin-top: 20px;
+    }
+
 /* footer */
 
 #main_footer {
