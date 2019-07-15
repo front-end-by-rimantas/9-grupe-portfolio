@@ -77,6 +77,69 @@ function generateSkills( data ) {
 
 // testimonials
 
+function generateTestimonials( data ) {
+    let listHTML = '';
+                    
+    data.forEach( testimonial => {
+        listHTML += `<div class="item">
+                        <div class="qoute">99</div>
+                        <div class="author">${testimonial.author}</div>
+                        <div class="stars">
+                            ${generateStars(testimonial.stars)}
+                        </div>
+                        <div class="content">${testimonial.content}</div>
+                    </div>`;
+    });
+
+    return `<div class="testimonials">
+                <div class="list">${listHTML}</div>
+                <div class="navigation">
+                    <i class="fa fa-angle-left"></i>
+                    <div class="full-bar">
+                        <div class="bar"></div>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>`;
+}
+
+function generateStars( count=5, limit=5 ) {
+    let HTML = '';
+
+    if ( limit < 1 ) {
+        limit = 5;
+    }
+    if ( count < 1 ||
+         count > limit ) {
+        count = limit;
+    }
+
+    for ( let i=0; i<count; i++ ) {
+        HTML += '<i class="fa fa-star"></i>';
+    }
+    
+    if ( count < limit ) {
+        for ( let i=0; i<limit-count; i++ ) {
+            HTML += '<i class="fa fa-star-o"></i>';
+        }
+    }
+
+    return HTML;
+}
+
+function changeTestimonial( event ) {
+    let classList = event.target.classList,
+        direction = 1;
+
+    if ( classList.contains('fa-angle-left') ) {
+        direction = -1;
+    }
+
+    console.log( direction );
+
+    return;
+}
+
 // footer
 
 function generateFooterIcons( data ) {

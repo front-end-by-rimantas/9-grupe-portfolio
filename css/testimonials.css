@@ -1,1 +1,85 @@
 /* testimonials */
+
+.testimonials {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+    .testimonials > .list {
+        display: inline-block;
+        width: 300%;
+        margin-left: -100%;
+    }
+        .testimonials > .list > .item {
+            display: inline-block;
+            width: calc(100% / 3);
+            float: left;
+        }
+            .testimonials > .list > .item > * {
+                display: inline-block;
+                width: 100%;
+            }
+            .testimonials > .list > .item > .qoute {
+                color: var(--third-color);
+                font-family: cursive;
+                font-size: 50px;
+                line-height: 60px;
+            }
+            .testimonials > .list > .item > .author {
+                color: var(--third-color-text);
+                font-size: 30px;
+                line-height: 30px;
+
+            }
+            .testimonials > .list > .item > .stars {
+                color: var(--star-color);
+            }
+            .testimonials > .list > .item > .content {
+            }
+        
+    .testimonials > .navigation {
+        display: inline-block;
+        width: 100%;
+    }
+        .testimonials > .navigation > .fa {
+            display: inline-block;
+            width: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            position: relative;
+            text-align: left;
+            cursor: pointer;
+        }
+            .testimonials > .navigation > .fa::after {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 2px;
+                background-color: #333;
+                position: absolute;
+                top: 14px;
+                left: 2px;
+            }
+            .testimonials > .navigation > .fa:last-child {
+                text-align: right;
+            }
+                .testimonials > .navigation > .fa:last-child::after {
+                    right: 2px;
+                    left: auto;
+                }
+        .testimonials > .navigation > .full-bar {
+            display: inline-block;
+            width: 200px;
+            height: 6px;
+            margin-top: 12px;
+            background-color: var(--third-color);
+        }
+            .testimonials > .navigation > .full-bar > .bar {
+                display: inline-block;
+                height: 100%;
+                width: calc(100% / 3);
+                float: left;
+                margin-left: calc(100% / 3);
+                background-color: var(--secondary-color);
+            }

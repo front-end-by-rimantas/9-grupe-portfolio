@@ -123,6 +123,24 @@ const services = [
 
 // testimonials
 
+const testimonials = [
+    {
+        author: 'Ahmed',
+        stars: 5,
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio assumenda tenetur quaerat tempora necessitatibus.'
+    },
+    {
+        author: 'Sara',
+        stars: 5,
+        content: 'Lorem sit amet consectetur adipisicing elit. Atque, optio tenetur quaerat tempora necessitatibus.'
+    },
+    {
+        author: 'Karim',
+        stars: 4,
+        content: 'Dolor sit amet consectetur adipisicing elit. Atque, optio assumenda tenetur quaerat tempora.'
+    }
+];
+
 // footerIcons
 const footerIcons = [
     {

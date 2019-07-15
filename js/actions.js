@@ -17,6 +17,11 @@ document.querySelector('#skills_list').innerHTML = generateSkills( skills );
 document.querySelector('#service_offers .blocks-list').innerHTML = generateAchievments( services );
 
 // testimonials
+document.querySelector('#testimonials .col-12').innerHTML = generateTestimonials( testimonials );
+
+document.querySelectorAll('.testimonials .fa').forEach( item => {
+    item.addEventListener( 'click', changeTestimonial );
+});
 
 // foteryje sugeneruojame ikonas
 document.querySelector('#main_footer .social-icons').innerHTML = generateFooterIcons( footerIcons );
