@@ -122,7 +122,7 @@ const services = [
 ];
 
 // testimonials
-
+let visibleTestimonial = 1;
 const testimonials = [
     {
         author: 'Ahmed',

@@ -135,9 +135,18 @@ function changeTestimonial( event ) {
         direction = -1;
     }
 
-    console.log( direction );
+    visibleTestimonial += direction;
+    
+    if ( visibleTestimonial >= testimonials.length ) {
+        visibleTestimonial = 0;
+    }
+    if ( visibleTestimonial < 0 ) {
+        visibleTestimonial = testimonials.length - 1;
+    }
 
-    return;
+    document.querySelector('.testimonials > .navigation > .full-bar > .bar').style.marginLeft = `calc(100% / ${testimonials.length} * ${visibleTestimonial})`;
+
+    return document.querySelector('#testimonials .list').style.marginLeft = visibleTestimonial * -100 + '%';
 }
 
 // footer
