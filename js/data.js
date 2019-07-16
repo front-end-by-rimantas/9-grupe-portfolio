@@ -27,32 +27,66 @@ const achievements = [
 // clients
 const clients = [
     {
-        photo: 'client-logo.png',
+        photo: 'b1.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b2.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b3.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b4.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b5.png',
         link: '#'
     },
     {
-        photo: 'client-logo.png',
+        photo: 'b1.png',
+        link: '#'
+    },
+    {
+        photo: 'b2.png',
+        link: '#'
+    },
+    {
+        photo: 'b3.png',
+        link: '#'
+    },
+    {
+        photo: 'b4.png',
+        link: '#'
+    },
+    {
+        photo: 'b5.png',
         link: '#'
     }
 ];
 
 // skills
+const skills = [
+    {
+        title: 'HTML5',
+        value: 85
+    },
+    {
+        title: 'CSS3',
+        value: 75
+    },
+    {
+        title: 'J-Query',
+        value: 90
+    },
+    {
+        title: 'Bootstrap',
+        value: 60
+    }
+];
 
 // latest works
 
@@ -88,6 +122,25 @@ const services = [
 ];
 
 // testimonials
+let visibleTestimonial = 1;
+let animationInProgress = false;
+const testimonials = [
+    {
+        author: 'Ahmed',
+        stars: 5,
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio assumenda tenetur quaerat tempora necessitatibus.'
+    },
+    {
+        author: 'Sara',
+        stars: 5,
+        content: 'Lorem sit amet consectetur adipisicing elit. Atque, optio tenetur quaerat tempora necessitatibus.'
+    },
+    {
+        author: 'Karim',
+        stars: 4,
+        content: 'Dolor sit amet consectetur adipisicing elit. Atque, optio assumenda tenetur quaerat tempora.'
+    }
+];
 
 // footerIcons
 const footerIcons = [

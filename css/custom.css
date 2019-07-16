@@ -17,12 +17,16 @@
     color: var(--third-color-anti);
 }
 
+p + p {
+    margin-top: 20px;
+}
+
 /* headings */
 
 .section-title {
     display: inline-block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-size: 50px;
     line-height: 60px;
     position: relative;
@@ -88,6 +92,13 @@
 /* testimonials */
 
 /* contact me */
+
+#contact_me {
+    text-align: center;
+}
+    #contact_me .row:nth-child(3) > div {
+        margin-top: 20px;
+    }
 
 /* footer */
 

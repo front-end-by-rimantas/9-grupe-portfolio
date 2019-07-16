@@ -7,6 +7,7 @@ document.querySelector('#achievements .blocks-list').innerHTML = generateAchievm
 document.querySelector('#clients > .row').innerHTML = generateClientLogos( clients );
 
 // skills
+document.querySelector('#skills_list').innerHTML = generateSkills( skills );
 
 // latest works
 
@@ -16,6 +17,11 @@ document.querySelector('#clients > .row').innerHTML = generateClientLogos( clien
 document.querySelector('#service_offers .blocks-list').innerHTML = generateAchievments( services );
 
 // testimonials
+document.querySelector('#testimonials .col-12').innerHTML = generateTestimonials( testimonials );
+
+document.querySelectorAll('.testimonials .fa').forEach( item => {
+    item.addEventListener( 'click', changeTestimonial );
+});
 
 // foteryje sugeneruojame ikonas
 document.querySelector('#main_footer .social-icons').innerHTML = generateFooterIcons( footerIcons );

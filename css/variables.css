@@ -1,13 +1,29 @@
 /* colors */
 :root {
     --main-color: #90ACD1;
+    --main-color-text: #FFF;
     --main-color-anti: #FFF;
+    --main-color-anti-text: #222;
+
     --secondary-color: #E45447;
+    --secondary-color-text: #FFF;
     --secondary-color-anti: #FFF;
+    --secondary-color-anti-text: #E45447;
+
     --main-color-light: #F9F9FF;
+    --main-color-light-text: #222;
     --main-color-light-anti: #222;
+    --main-color-light-anti-text: #F9F9FF;
+
     --third-color: #CCCCCC;
+    --third-color-text: #222;
     --third-color-anti: #222;
+    --third-color-anti-text: #CCC;
+
     --forth-color: #DFE6F4;
+    --forth-color-text: #585A5C;
     --forth-color-anti: #585A5C;
+    --forth-color-anti-text: #DFE6F4;
+
+    --star-color: #ffc000;
 }
