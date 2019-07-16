@@ -9,7 +9,7 @@
     .testimonials > .list {
         display: inline-block;
         width: 300%;
-        margin-left: -100%;
+        margin-left: -200%;
     }
         .testimonials > .list > .item {
             display: inline-block;

@@ -123,6 +123,7 @@ const services = [
 
 // testimonials
 let visibleTestimonial = 1;
+let animationInProgress = false;
 const testimonials = [
     {
         author: 'Ahmed',
