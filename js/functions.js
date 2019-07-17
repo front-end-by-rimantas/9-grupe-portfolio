@@ -71,6 +71,12 @@ function generateSkills( data ) {
 
 // latest works
 
+function generateGallery( data ) {
+    let HTML = '';
+
+    return HTML;
+}
+
 // job history
 
 // service offers
