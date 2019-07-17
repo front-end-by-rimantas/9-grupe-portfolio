@@ -3,6 +3,7 @@
 #clients {
     height: 0;
     padding: 20px 0;
+    position: relative;
 }
     #clients .row {
         height: 114px;
