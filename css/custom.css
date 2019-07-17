@@ -17,6 +17,13 @@
     color: var(--third-color-anti);
 }
 
+.main-color {
+    color: var(--main-color);
+}
+.secondary-color {
+    color: var(--secondary-color);
+}
+
 p + p {
     margin-top: 20px;
 }
@@ -27,6 +34,7 @@ p + p {
     display: inline-block;
     width: 100%;
     margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
     font-size: 50px;
     line-height: 60px;
     position: relative;
@@ -74,6 +82,105 @@ p + p {
 /* header */
 
 /* hero */
+#hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+    #hero .white-block {
+        display: inline-block;
+        float: left;
+        width: 69%;
+        background-color: #FFF;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    #hero .content-layout {
+        display: inline-block;
+        position: relative;
+        color: #333;
+    }
+        #hero .content-layout > .flag {
+            display: inline-block;
+            padding: 20px 15px;
+            margin-bottom: 40px;
+            background-color: var(--main-color);
+            border-radius: 10px;
+            color: var(--main-color-text);
+            position: relative;
+        }
+            #hero .content-layout > .flag::after {
+                content: '';
+                display: inline-block;
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                bottom: -19px;
+                right: 0;
+                border-top: 30px solid transparent;
+                border-right: 30px solid var(--main-color);
+                border-bottom: 30px solid transparent;
+                border-left: none;
+            }
+        #hero .content-layout > h1 {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 70px;
+            line-height: 70px;
+        }
+        #hero .content-layout > p {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 40px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+            #hero .content-layout > p > span {
+                font-size: inherit;
+                line-height: inherit;
+            }
+    #hero img {
+        display: inline-block;
+        position: absolute;
+        height: 90%;
+        right: 20px;
+        bottom: 0;
+    }
+
+    @media ( max-width: 1200px ) {
+        #hero .white-block {
+            width: 75%;
+        }
+    }
+    @media ( max-width: 1000px ) {
+        #hero .white-block {
+            width: 80%;
+        }
+        #hero img {
+            display: none;
+        }
+    }
+    @media ( max-width: 800px ) {
+        #hero .white-block {
+            width: 90%;
+        }
+        #hero img {
+            display: none;
+        }
+    }
+    @media ( max-width: 600px ) {
+        #hero .white-block {
+            width: 100%;
+        }
+        #hero br {
+            display: none;
+        }
+    }
 
 /* clients */
 
