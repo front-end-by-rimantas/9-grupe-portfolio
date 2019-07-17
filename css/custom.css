@@ -34,6 +34,7 @@ p + p {
     display: inline-block;
     width: 100%;
     margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
     font-size: 50px;
     line-height: 60px;
     position: relative;
@@ -128,6 +129,7 @@ p + p {
             display: inline-block;
             width: 100%;
             margin-bottom: 30px;
+            font-family: 'Nunito', sans-serif;
             font-size: 70px;
             line-height: 70px;
         }
