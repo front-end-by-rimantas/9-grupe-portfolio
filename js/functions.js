@@ -72,7 +72,33 @@ function generateSkills( data ) {
 // latest works
 
 function generateGallery( data ) {
-    let HTML = '';
+    let HTML = '',
+        workHTML = '';
+
+    // filtras
+        // elementai: All + unikalus tag'ai
+    // darbu sarasas
+        // max 6 elementai
+    for ( let i=0; i<data.length; i++ ) {
+        workHTML += `<div class="item" style="background-image: url(img/portfolio/${data[i].img});">
+                        <div class="content">
+                            <div class="texts">
+                                <h4>${data[i].title}</h4>
+                                <div class="tags">${data[i].tags.join(', ')}</div>
+                            </div>
+                        </div>
+                    </div>`;
+    }
+    
+    HTML = `<div class="filter">
+                <div class="item active">All</div>
+                <div class="item">tag</div>
+                <div class="item">tag</div>
+                <div class="item">tag</div>
+            </div>
+            <div class="list">
+                ${workHTML}
+            </div>`;
 
     return HTML;
 }

@@ -10,7 +10,7 @@ document.querySelector('#clients > .row').innerHTML = generateClientLogos( clien
 document.querySelector('#skills_list').innerHTML = generateSkills( skills );
 
 // latest works
-document.querySelector('#works_gallery').innerHTML = generateGallery( works );
+document.querySelector('#works_gallery .gallery').innerHTML = generateGallery( works );
 
 // job history
 

@@ -92,32 +92,32 @@ const skills = [
 
 const works = [
     {
-        img: '',
-        title: 'Coming soon',
-        tags: ['html', 'css', 'responsive']
-    },
-    {
-        img: '',
+        img: 'serlokas.png',
         title: 'Sherlokas',
         tags: ['html', 'css']
     },
     {
-        img: '',
+        img: 'zalia-mergaite.png',
         title: 'Zalia mergaite',
         tags: ['html', 'css']
     },
     {
-        img: '',
+        img: 'sign-up.png',
         title: 'Sign up',
         tags: ['html', 'css', 'advanced']
     },
     {
-        img: '',
+        img: 'coming-soon.png',
+        title: 'Coming soon',
+        tags: ['html', 'css', 'responsive']
+    },
+    {
+        img: 'car-racing.png',
         title: 'Racing game',
         tags: ['css', 'js']
     },
     {
-        img: '',
+        img: 'portfolio.png',
         title: 'Portfolio',
         tags: ['responsive', 'js', 'advanced']
     }
