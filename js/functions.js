@@ -71,6 +71,43 @@ function generateSkills( data ) {
 
 // latest works
 
+function generateGallery( data ) {
+    let HTML = '',
+        tagsHTML = '',
+        workHTML = '';
+
+    // filtras
+        // elementai: All + unikalus tag'ai
+    uniqueWords(data, 'tags').forEach( tag => {
+        tagsHTML += `<div class="item">
+                        ${tag}
+                    </div>`;
+    });
+        
+    // darbu sarasas
+        // max 6 elementai
+    for ( let i=0; i<data.length; i++ ) {
+        workHTML += `<div class="item" style="background-image: url(img/portfolio/${data[i].img});">
+                        <div class="content">
+                            <div class="texts">
+                                <h4>${data[i].title}</h4>
+                                <div class="tags">${data[i].tags.join(', ')}</div>
+                            </div>
+                        </div>
+                    </div>`;
+    }
+    
+    HTML = `<div class="filter">
+                <div class="item active">All</div>
+                ${tagsHTML}
+            </div>
+            <div class="list">
+                ${workHTML}
+            </div>`;
+
+    return HTML;
+}
+
 // job history
 
 // service offers
@@ -226,4 +263,19 @@ function generateFooterIcons( data ) {
     }
 
     return HTML;
+}
+
+// back to top
+
+function updateBackToTopVisibility() {
+    const backToTopVisibleHeight = Math.floor(window.innerHeight * 0.5);
+    const backToTop = document.getElementById('back_to_top');
+    
+    if ( window.scrollY >= backToTopVisibleHeight ) {
+        // rodau rodykle
+        backToTop.style.display = 'inline-block';
+    } else {
+        // slepiu rodykle
+        backToTop.style.display = 'none';
+    }
 }

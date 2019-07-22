@@ -90,6 +90,39 @@ const skills = [
 
 // latest works
 
+const works = [
+    {
+        img: 'serlokas.png',
+        title: 'Sherlokas',
+        tags: ['html', 'css']
+    },
+    {
+        img: 'zalia-mergaite.png',
+        title: 'Zalia mergaite',
+        tags: ['html', 'css']
+    },
+    {
+        img: 'sign-up.png',
+        title: 'Sign up',
+        tags: ['html', 'css', 'advanced']
+    },
+    {
+        img: 'coming-soon.png',
+        title: 'Coming soon',
+        tags: ['html', 'css', 'responsive']
+    },
+    {
+        img: 'car-racing.png',
+        title: 'Racing game',
+        tags: ['css', 'js']
+    },
+    {
+        img: 'portfolio.png',
+        title: 'Portfolio',
+        tags: ['responsive', 'js', 'advanced']
+    }
+];
+
 // job history
 
 // service offers
