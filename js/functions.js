@@ -79,7 +79,9 @@ function generateGallery( data ) {
     // filtras
         // elementai: All + unikalus tag'ai
     uniqueWords(data, 'tags').forEach( tag => {
-        tagsHTML += `<div class="item">${tag}</div>`;
+        tagsHTML += `<div class="item">
+                        ${tag}
+                    </div>`;
     });
         
     // darbu sarasas
