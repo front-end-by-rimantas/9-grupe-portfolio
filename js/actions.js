@@ -60,3 +60,8 @@ document.querySelectorAll('.testimonials .fa').forEach( item => {
 
 // foteryje sugeneruojame ikonas
 document.querySelector('#main_footer .social-icons').innerHTML = generateFooterIcons( footerIcons );
+
+// back-to-top
+
+window.addEventListener('scroll', updateBackToTopVisibility);
+updateBackToTopVisibility();
