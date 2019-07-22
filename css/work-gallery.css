@@ -1,1 +1,71 @@
 /* work gallery */
+
+.gallery {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+    .gallery > .filter {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+        .gallery > .filter > .item {
+            display: inline-block;
+            float: left;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+            .gallery > .filter > .item:last-child {
+                margin-right: 0;
+            }
+            .gallery > .filter > .item:hover,
+            .gallery > .filter > .item.active {
+                color: var(--secondary-color);
+            }
+    .gallery > .list {
+        display: inline-block;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        text-align: center;
+    }
+        .gallery > .list > .item {
+            display: inline-block;
+            width: calc((100% - 90px) / 3);
+            height: 300px;
+            float: left;
+            margin: 0 15px 30px;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            overflow: hidden;
+            /* border: 1px solid #EEE; */
+            box-shadow: 0 2px 8px #3338;
+        }
+            .gallery .item > .content {
+                display: none;
+                background-color: #E45447CC;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                color: var(--secondary-color-text);
+                align-items: center;
+                justify-content: center;
+            }
+                .gallery .item > .content > .texts {
+                    display: inline-block;
+                    width: 100%;
+                }
+                .gallery .item > .content h4 {
+                    display: inline-block;
+                    width: 100%;
+                }
+                .gallery .item > .content .tags {
+                    display: inline-block;
+                    width: 100%;
+                }
+                .gallery .item:hover > .content {
+                    display: flex;
+                }
