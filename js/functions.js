@@ -264,3 +264,18 @@ function generateFooterIcons( data ) {
 
     return HTML;
 }
+
+// back to top
+
+function updateBackToTopVisibility() {
+    const backToTopVisibleHeight = Math.floor(window.innerHeight * 0.5);
+    const backToTop = document.getElementById('back_to_top');
+    
+    if ( window.scrollY >= backToTopVisibleHeight ) {
+        // rodau rodykle
+        backToTop.style.display = 'inline-block';
+    } else {
+        // slepiu rodykle
+        backToTop.style.display = 'none';
+    }
+}
