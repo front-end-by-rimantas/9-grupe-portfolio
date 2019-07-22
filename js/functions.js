@@ -73,10 +73,15 @@ function generateSkills( data ) {
 
 function generateGallery( data ) {
     let HTML = '',
+        tagsHTML = '',
         workHTML = '';
 
     // filtras
         // elementai: All + unikalus tag'ai
+    uniqueWords(data, 'tags').forEach( tag => {
+        tagsHTML += `<div class="item">${tag}</div>`;
+    });
+        
     // darbu sarasas
         // max 6 elementai
     for ( let i=0; i<data.length; i++ ) {
@@ -92,9 +97,7 @@ function generateGallery( data ) {
     
     HTML = `<div class="filter">
                 <div class="item active">All</div>
-                <div class="item">tag</div>
-                <div class="item">tag</div>
-                <div class="item">tag</div>
+                ${tagsHTML}
             </div>
             <div class="list">
                 ${workHTML}
