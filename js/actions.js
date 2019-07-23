@@ -5,6 +5,13 @@
 window.addEventListener('scroll', updateHeader);
 updateHeader();
 
+document.querySelector('.hamburger').addEventListener('click', updateMenu);
+document.querySelector('#menu .left').innerHTML = generateMenu();
+
+document.querySelectorAll('#menu .left > a').forEach( link => {
+    link.addEventListener('click', updateMenu);
+});
+
 // achievments section
 document.querySelector('#achievements .blocks-list').innerHTML = generateAchievments( achievements );
 

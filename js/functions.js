@@ -15,6 +15,45 @@ function updateHeader() {
     return;
 }
 
+function updateMenu() {
+    const body = document.querySelector('body');
+    const left = document.querySelector('#menu > .left');
+    const right = document.querySelector('#menu > .right');
+    
+    if ( body.classList.contains('show-menu') ) {
+        left.classList.remove('in');
+        right.classList.remove('in');
+        left.classList.add('out');
+        right.classList.add('out');
+
+        // laukiame kada isvazuos sonai, tada paslepiam visa menu
+        setTimeout(function(){
+            body.classList.remove('show-menu');
+        }, 1000);
+    } else {
+        body.classList.add('show-menu');
+        left.classList.remove('out');
+        right.classList.remove('out');
+        left.classList.add('in');
+        right.classList.add('in');
+    }
+        
+    return;
+}
+
+function generateMenu() {
+    let HTML = '<a href="#" class="active">Home</a>';
+    const links = document.querySelectorAll('body > *[data-menu]');
+
+    links.forEach( linkElement => {
+        const href = linkElement.getAttribute('id');
+        const title = linkElement.dataset.menu;
+        HTML += `<a href="#${href}">${title}</a>`;
+    });
+
+    return HTML;
+}
+
 // generate Achievments
 function generateAchievments( data ) {
     let HTML = '',
