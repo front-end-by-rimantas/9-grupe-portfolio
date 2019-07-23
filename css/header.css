@@ -1,12 +1,16 @@
 /* header */
 #main_header {
     padding: 10px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
 }
+    #main_header > .row {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
 #main_header img {
     float: left;
@@ -14,8 +18,9 @@
 
 .hamburger {
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
     float: right;
     background-color: transparent;
     cursor: pointer;
@@ -29,4 +34,10 @@
     }
     .hamburger > .bar + .bar {
         margin-top: 29%;
+    }
+
+    #main_header.fixed {
+        position: fixed;
+        background-color: #FFF;
+        box-shadow: 0 2px 4px #999;
     }

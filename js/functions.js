@@ -1,5 +1,20 @@
 "use strict";
 
+// header
+function updateHeader() {
+    const headerVisibleHeight = Math.floor(window.innerHeight * 0.5);
+    const header = document.getElementById('main_header');
+    
+    if ( window.scrollY >= headerVisibleHeight ) {
+        // prideda klase "fixed"
+        header.classList.add('fixed');
+    } else {
+        // pasaliname klase "fixed"
+        header.classList.remove('fixed');
+    }
+    return;
+}
+
 // generate Achievments
 function generateAchievments( data ) {
     let HTML = '',

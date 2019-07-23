@@ -1,5 +1,10 @@
 "use strict";
 
+// header
+
+window.addEventListener('scroll', updateHeader);
+updateHeader();
+
 // achievments section
 document.querySelector('#achievements .blocks-list').innerHTML = generateAchievments( achievements );
 
