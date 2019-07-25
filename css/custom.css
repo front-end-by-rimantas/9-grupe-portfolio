@@ -81,6 +81,110 @@ p + p {
 
 /* header */
 
+/* menu */
+
+#menu {
+    display: none;
+    /* width: 100%; */
+    /* height: 100vh; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+    .show-menu #menu {
+        display: inline-block;
+    }
+    #menu > .left,
+    #menu > .right {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        padding: 120px 0 50px 0;
+        background: #FFFE;
+    }
+    #menu > .left {
+        float: left;
+        padding-left: 90px;
+        padding-right: 20px;
+    }
+        #menu > .left.out {
+            margin-left: -50%;
+            animation-name: marginLeftOut;
+            animation-duration: 1s;
+        }
+        #menu > .left.in {
+            margin-left: 0%;
+            animation-name: marginLeftIn;
+            animation-duration: 1s;
+        }
+    #menu > .right {
+        float: right;
+        padding-left: 20px;
+        padding-right: 90px;
+        text-align: right;
+    }
+        #menu > .right.out {
+            margin-right: -50%;
+            animation-name: marginRightOut;
+            animation-duration: 1s;
+        }
+        #menu > .right.in {
+            margin-right: 0%;
+            animation-name: marginRightIn;
+            animation-duration: 1s;
+        }
+    @keyframes marginLeftIn {
+        0% {
+            margin-left: -50%;
+        }
+        100% {
+            margin-left: 0;
+        }
+    }
+    @keyframes marginLeftOut {
+        0% {
+            margin-left: 0%;
+        }
+        100% {
+            margin-left: -50%;
+        }
+    }
+    @keyframes marginRightIn {
+        0% {
+            margin-right: -50%;
+        }
+        100% {
+            margin-right: 0;
+        }
+    }
+    @keyframes marginRightOut {
+        0% {
+            margin-right: 0;
+        }
+        100% {
+            margin-right: -50%;
+        }
+    }
+    #menu > div > a {
+        display: inline-block;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        text-decoration: none;
+        color: #333;
+    }
+        #menu > div > a:hover,
+        #menu > div > a.active {
+            color: var(--secondary-color);
+        }
+
 /* hero */
 #hero {
     display: flex;
