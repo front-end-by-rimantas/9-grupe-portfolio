@@ -1,5 +1,12 @@
 "use strict";
 
+// on scroll
+function functionToCallOnScroll() {
+    updateHeader();
+    updateBackToTopVisibility();
+    updateActiveHeaderMenu();
+}
+
 // header
 function updateHeader() {
     const headerVisibleHeight = Math.floor(window.innerHeight * 0.5);
@@ -52,6 +59,43 @@ function generateMenu() {
     });
 
     return HTML;
+}
+
+function generateHeaderIcons( data ) {
+    let HTML = '';
+
+    data.forEach( item => {
+        HTML += `<a href="${item.link}" class="fa fa-${item.icon}"></a>`;
+    });
+
+    return HTML;
+}
+
+function updateActiveHeaderMenu() {
+    const links = document.querySelectorAll('body > *[data-menu]');
+    let sectionTitles = [''];
+    let sectionTopPositions = [0],
+        scrollPosition = window.scrollY + parseInt(getComputedStyle(document.getElementById('main_header')).height);
+
+    links.forEach( link => {
+        sectionTitles.push(link.getAttribute('id'));
+        sectionTopPositions.push(link.offsetTop);
+    });
+    
+    let i = 0;
+    while ( sectionTopPositions[i] < scrollPosition ) {
+        i++;
+    }
+    i--;
+    
+    document.querySelectorAll('#menu .left a').forEach( link => {
+        link.classList.remove('active');
+        if ( link.getAttribute('href') === '#'+sectionTitles[i] ) {
+            link.classList.add('active');
+        }
+    });
+
+    return;
 }
 
 // generate Achievments
