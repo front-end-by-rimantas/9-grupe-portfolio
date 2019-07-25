@@ -23,10 +23,26 @@
     <header id="main_header" class="container">
         <div class="row">
             <div class="col-12">
-                HEADER
+                <img src="./img/logo.png" alt="Portfolio logo">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </div>
     </header>
+
+    <div id="menu">
+        <div class="left out">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Skills</a>
+        </div>
+        <div class="right out">
+            ICONS
+        </div>
+    </div>
 
     <div id="hero" class="container bg-main-color">
         <div class="row">
@@ -51,7 +67,7 @@
         </div>
     </div>
 
-    <div id="about_me" class="container">
+    <div id="about_me" class="container" data-menu="About">
         <div class="row">
             <img class="col-5 hidden-sm margin-r-2" src="./img/abuot/about-img.png" alt="My selfie">
             <div class="col-5 col-sm-12">
@@ -72,7 +88,7 @@
         </div>
     </div>
 
-    <div id="skills" class="container">
+    <div id="skills" class="container" data-menu="Skills">
         <div class="row">
             <div class="col-5 col-sm-12 margin-r-1 margin-sm-0">
                 <h2 class="section-title no-line">I got the skills</h2>
@@ -84,7 +100,7 @@
         </div>
     </div>
 
-    <div id="latest_works" class="container bg-main-color-light">
+    <div id="latest_works" class="container bg-main-color-light" data-menu="Works">
         <div class="row">
             <h2 class="section-title col-12">Latest work</h2>
         </div>
@@ -97,14 +113,14 @@
         </div>
     </div>
 
-    <div id="job_history" class="container">
+    <div id="job_history" class="container" data-menu="Resume">
         <div class="row">
             <h2 class="section-title col-12">Job history</h2>
             JOB HISTORY
         </div>
     </div>
 
-    <div id="service_offers" class="container bg-main-color-light">
+    <div id="service_offers" class="container bg-main-color-light" data-menu="Services">
         <div class="row">
             <h2 class="section-title col-12">Service offers</h2>
         </div>
@@ -121,7 +137,7 @@
         </div>
     </div>
 
-    <div id="contact_me" class="container bg-secondary-color">
+    <div id="contact_me" class="container bg-secondary-color" data-menu="Contact me">
         <div class="row">
             <h2 class="section-title title-center col-12">Contact me</h2>
         </div>
