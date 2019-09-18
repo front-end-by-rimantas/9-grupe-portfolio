@@ -3,7 +3,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 [![HitCount](http://hits.dwyl.com/front-end-by-rimantas/9-grupe-portfolio.svg)](http://hits.dwyl.com/front-end-by-rimantas/9-grupe-portfolio)
 
-# Martin
+# Karim
 ### 9 grupe - portfolio project
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
