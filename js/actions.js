@@ -74,6 +74,13 @@ document.querySelectorAll('.testimonials .fa').forEach( item => {
     item.addEventListener( 'click', changeTestimonial );
 });
 
+
+setInterval(function (){
+    document.querySelector('.testimonials .fa.fa-angle-right').click();
+},2000);
+
+
+
 // foteryje sugeneruojame ikonas
 document.querySelector('#main_footer .social-icons').innerHTML = generateFooterIcons( footerIcons );
 
